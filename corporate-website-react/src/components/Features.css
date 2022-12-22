@@ -1,0 +1,12 @@
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 0 20px;
+    margin: 30px auto;
+}
+@media (max-width: 500px) {
+    .features .container {
+        grid-template-columns: 1fr;
+    }
+}
