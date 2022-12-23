@@ -5,26 +5,25 @@ import './Tabs.css'
 Tabs Code by blog.logrocket.com with minor adoptions
 */
 
-const Tabs = () => {
+const Tabs = (props) => {
 
-    const tabTextOne = "$ npm create astro@latest"
-    const tabTextTwo = "$ pnpm create astro@latest"
-    const tabTextThree = "$ yarn create astro"
+    const tabTitle = props.tabTitle
+    const tabBody = props.tabBody
 
     const [activeTab, setActiveTab] = useState("1");
-    const [tabText, setTabText] = useState(tabTextOne);
+    const [tabText, setTabText] = useState(tabBody[0]);
 
     const handleTab1 = () => {
         setActiveTab("1");
-        setTabText(tabTextOne);
+        setTabText(tabBody[0]);
     };
     const handleTab2 = () => {
         setActiveTab("2");
-        setTabText(tabTextTwo);
+        setTabText(tabBody[1]);
     };
     const handleTab3 = () => {
         setActiveTab("3");
-        setTabText(tabTextThree)
+        setTabText(tabBody[2])
     };
 
     return (
@@ -34,19 +33,19 @@ const Tabs = () => {
                     className={activeTab === "1" ? "tab-selected" : ""}
                     onClick={handleTab1}
                 >
-                    NPM
+                    {tabTitle[0]}
                 </li>
                 <li
                     className={activeTab === "2" ? "tab-selected" : ""}
                     onClick={handleTab2}
                 >
-                    PNPM
+                    {tabTitle[1]}
                 </li>
                 <li
                     className={activeTab === "3" ? "tab-selected" : ""}
                     onClick={handleTab3}
                 >
-                    YARN
+                    {tabTitle[2]}
                 </li>
             </ul>
 
