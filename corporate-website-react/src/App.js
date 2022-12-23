@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Showcase from "./components/Showcase";
 import Features from "./components/Features";
 import Tabs from "./components/Tabs"
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
                     </p>
                 </div>
             </section>
+            <Footer />
         </div>
     );
 }
