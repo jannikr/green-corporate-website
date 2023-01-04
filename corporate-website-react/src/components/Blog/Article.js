@@ -19,7 +19,7 @@ const Article = () => {
         <section className="page-content">
             <div className="container">
                 { isLoading && <p>Is loading...</p>}
-                TODO: Create new component for article-detail
+                {/*TODO: Create new component for article-detail*/}
                 { article && <Card featureTitle={article.title} featureBody={article.body} />}
             </div>
         </section>
