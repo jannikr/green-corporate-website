@@ -1,5 +1,5 @@
-import logos from '../assets/deploy-logos.png';
-import logosSmall from '../assets/deploy-logos-small.png';
+import logos from '../../assets/deploy-logos.png';
+import logosSmall from '../../assets/deploy-logos-small.png';
 
 const About = () => {
     return (

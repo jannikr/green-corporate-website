@@ -1,6 +1,6 @@
 import './Showcase.css';
-import frameworkLogos from '../assets/framework-logos.png';
-import frameworkLogosSmall from '../assets/framework-logos-small.png'
+import frameworkLogos from '../../assets/framework-logos.png';
+import frameworkLogosSmall from '../../assets/framework-logos-small.png'
 
 const heading = "Welcome To the Green IT Agency!"
 const text= "Discover new ways to reduce the resource consumption of web applications"

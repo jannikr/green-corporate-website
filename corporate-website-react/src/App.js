@@ -1,12 +1,12 @@
 import './App.css';
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/Layout/Navbar";
+import Footer from "./components/Layout/Footer";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import Home from "./components/Home";
-import About from "./components/About";
-import Team from "./components/Team";
-import Blog from "./components/Blog";
-import Article from "./components/Article";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Team from "./components/Team/Team";
+import Blog from "./components/Blog/Blog";
+import Article from "./components/Blog/Article";
 
 function App() {
 
