@@ -22,6 +22,9 @@ const About = () => {
                     impedit.
                 </p>
 
+                {/* Notice: There are no slots available for react.
+                That's because this part is not rendered as Card component.*/}
+
                 <div className="card">
                     <h3>Use the tools you already love</h3>
                     <p>
