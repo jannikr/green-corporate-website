@@ -1,7 +1,7 @@
 import {useParams} from "react-router-dom";
 import Articles from '../../data/articles.json'
 import {useEffect, useState} from "react";
-import Card from "../Home/Card";
+import ArticleDetail from "./ArticleDetail";
 
 const Article = () => {
 
@@ -19,8 +19,7 @@ const Article = () => {
         <section className="page-content">
             <div className="container">
                 { isLoading && <p>Is loading...</p>}
-                {/*TODO: Create new component for article-detail*/}
-                { article && <Card featureTitle={article.title} featureBody={article.body} />}
+                { article && <ArticleDetail articleTitle={article.title} articleImage={article.image} articleBody={article.body} />}
             </div>
         </section>
     );
