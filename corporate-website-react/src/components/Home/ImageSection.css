@@ -1,0 +1,22 @@
+.image-section-wrapper {
+    background: var(--color-secondary);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.image-section-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-section {
+    width: 450px;
+    margin-right: 20px;
+}
+
+.section-text {
+    text-align: left;
+}
