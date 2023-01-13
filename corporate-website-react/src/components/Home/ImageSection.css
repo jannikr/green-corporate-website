@@ -14,9 +14,16 @@
 
 .image-section {
     width: 450px;
+}
+
+.image-section-left {
     margin-right: 20px;
 }
 
+.image-section-right {
+    margin-left: 20px;
+}
+
 .section-text {
-    text-align: left;
+    text-align: justify;
 }

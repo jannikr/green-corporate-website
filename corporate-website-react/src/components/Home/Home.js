@@ -29,7 +29,7 @@ const Home = () => {
                     </p>
                 </div>
             </section>
-            <ImageSection />
+            <ImageSection imageIsLeft={false} imageSrc={"sky-loop.jpg"}/>
             <section className="page-content">
                 <div className="container">
                     <h3>Lorem ipsum</h3>
@@ -41,8 +41,18 @@ const Home = () => {
                         laborum impedit nesciunt ut voluptatum assumenda aspernatur libero
                         iusto error molestias dolorum, necessitatibus labore?
                     </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum
+                        deserunt inventore ut voluptate, officia maiores repellat tenetur
+                        praesentium omnis est ex tempora a necessitatibus reiciendis at et
+                        dignissimos. Ipsam eius consequuntur cupiditate aperiam porro, esse
+                        laborum impedit nesciunt ut voluptatum assumenda aspernatur libero
+                        iusto error molestias dolorum, necessitatibus labore?
+                    </p>
                 </div>
             </section>
+            <ImageSection imageIsLeft={true} imageSrc={"ash-from.jpg"}/>
 
         </div>
     );
