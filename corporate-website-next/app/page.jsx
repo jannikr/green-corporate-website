@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from './page.module.css'
+import Showcase from "@/app/Showcase";
 
 
 export default function Home() {
   return (
       <div>
-        {/*<Showcase/>*/}
+        <Showcase/>
         {/*<Features/>*/}
         <section className="page-content">
           <div className="container">
