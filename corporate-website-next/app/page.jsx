@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import Showcase from "@/app/Showcase";
 import Features from "@/app/Features";
-import Tabs from "@/app/Tabs";
+import ImageSection from "@/app/ImageSection";
 
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        {/*<ImageSection imageIsLeft={false} imageSrc={"sky-loop.jpg"}/>*/}
+        <ImageSection imageIsLeft={false} imageSrc={"/sky-loop.jpg"}/>
         <section className="page-content">
           <div className="container">
             <h3>Lorem ipsum</h3>
