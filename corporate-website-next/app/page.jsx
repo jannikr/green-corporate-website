@@ -1,24 +1,22 @@
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from './page.module.css'
 import Showcase from "@/app/Showcase";
+import Features from "@/app/Features";
+import Tabs from "@/app/Tabs";
 
 
 export default function Home() {
   return (
       <div>
         <Showcase/>
-        {/*<Features/>*/}
         <section className="page-content">
           <div className="container">
+            <Features/>
             <h2>Get Started With Astro</h2>
             <p>
               Get a new Astro project up and running locally with our helpful
               create-astro CLI wizard!
             </p>
-            {/*<Tabs tabTitle={["NPM", "PNPM", "YARN"]}*/}
-            {/*      tabBody={["$ npm create astro@latest", "$ pnpm create astro@latest", "$ yarn create astro"]}*/}
-            {/*/>*/}
             <h3>Start Building</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum
