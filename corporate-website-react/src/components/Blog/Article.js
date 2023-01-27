@@ -18,6 +18,7 @@ const Article = () => {
     return (
         <section className="page-content">
             <div className="container">
+                {/*Is important to wait for articles to render*/}
                 { isLoading && <p>Is loading...</p>}
                 { article && <ArticleDetail articleTitle={article.title} articleImage={article.image} articleBody={article.body} />}
             </div>
