@@ -15,7 +15,7 @@ const ImageSection = (props) => {
                                alt="Logo"
                                className={`${styles.imageSection} ${styles.imageSectionLeft}`}
                                width={450}
-                               height={200}
+                               height={300}
                                priority
                         />
                     </div>}
@@ -34,7 +34,7 @@ const ImageSection = (props) => {
                                alt="Logo"
                                className={`${styles.imageSection} ${styles.imageSectionRight}`}
                                width={450}
-                               height={200}
+                               height={300}
                                priority
                         />
                     </div>}

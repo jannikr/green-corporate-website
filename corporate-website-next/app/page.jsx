@@ -51,7 +51,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        {/*<ImageSection imageIsLeft={true} imageSrc={"ash-from.jpg"}/>*/}
+        <ImageSection imageIsLeft={true} imageSrc={"/ash-from.jpg"}/>
 
       </div>
   )

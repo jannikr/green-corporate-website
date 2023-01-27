@@ -9,7 +9,7 @@ const Card = (props) => {
 
     return (
         <div>
-            <div className={styles.card + (isDark ? styles.dark: '')}>
+            <div className={`card ${(isDark ? styles.dark: '')}`}>
                 <h3>{title}</h3>
                 <p>{body}</p>
             </div>

@@ -31,8 +31,6 @@ const Showcase = () => {
                     height={85}
                     priority
                 />
-{/*                <img className="logos" src={frameworkLogos} alt=""/>
-                <img className="logos-small" src={frameworkLogosSmall} alt=""/>*/}
             </div>
             <p className={styles.showcaseDemo}>
                 <small>This is a demo website used for energy efficiency measurements.</small>
