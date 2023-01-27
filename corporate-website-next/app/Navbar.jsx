@@ -1,13 +1,14 @@
 import styles from './Navbar.module.css';
 import React from "react";
 import Image from 'next/image'
+import Link from "next/link";
 
 const Navbar = () => {
     return (
         <header className={styles.header}>
             <div className={`container ${styles.container}`}>
                 <div className="logo">
-                    <a href="/">
+                    <Link className={styles.listItem} href="/">
                         <Image
                             src="logo.svg"
                             alt="Logo"
@@ -16,14 +17,15 @@ const Navbar = () => {
                             height={24}
                             priority
                         />
-                    </a>
+                    </Link>
                 </div>
                 <nav>
                     <ul>
-                        <li className={styles.listItem}>Home</li>
-                        <li className={styles.listItem}>About</li>
-                        <li className={styles.listItem}>Team</li>
-                        <li className={styles.listItem}>Blog</li>
+                        {/*Todo: Check disable prefetching with prefetch={false} as Link parameter*/}
+                        <li><Link className={styles.listItem} href="/">Home</Link></li>
+                        <li><Link className={styles.listItem} href="/about">About</Link></li>
+                        <li><Link className={styles.listItem} href="/team">Team</Link></li>
+                        <li><Link className={styles.listItem} href="/blog">Blog</Link></li>
                     </ul>
                 </nav>
             </div>

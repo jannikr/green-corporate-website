@@ -1,4 +1,6 @@
 import styles from './Footer.module.css'
+import Link from "next/link";
+import React from "react";
 const Footer = () => {
     return (
         <footer className={styles.footer}>
@@ -14,10 +16,10 @@ const Footer = () => {
                 <div>
                     <h3>Links</h3>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Team</li>
-                        <li>Blog</li>
+                        <li><Link className={styles.listItem} href="/">Home</Link></li>
+                        <li><Link className={styles.listItem} href="/about">About</Link></li>
+                        <li><Link className={styles.listItem} href="/team">Team</Link></li>
+                        <li><Link className={styles.listItem} href="/blog">Blog</Link></li>
                     </ul>
                 </div>
             </div>
