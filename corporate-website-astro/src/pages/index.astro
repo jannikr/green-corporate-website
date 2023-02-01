@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Showcase from '../components/Showcase.astro';
 import Features from '../components/Features.astro';
 import Tabs from '../components/Tabs.astro';
+import ImageSection from '../components/ImageSection.astro';
 ---
 
 <Layout>
@@ -30,4 +31,28 @@ import Tabs from '../components/Tabs.astro';
 			</p>
 		</div>
 	</section>
+	<ImageSection imageIsLeft={false} imageSrc={"sky-loop.jpg"}/>
+	<section class="page-content">
+      <div class="container">
+        <h3>Lorem ipsum</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum
+          deserunt inventore ut voluptate, officia maiores repellat tenetur
+          praesentium omnis est ex tempora a necessitatibus reiciendis at et
+          dignissimos. Ipsam eius consequuntur cupiditate aperiam porro, esse
+          laborum impedit nesciunt ut voluptatum assumenda aspernatur libero
+          iusto error molestias dolorum, necessitatibus labore?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum
+          deserunt inventore ut voluptate, officia maiores repellat tenetur
+          praesentium omnis est ex tempora a necessitatibus reiciendis at et
+          dignissimos. Ipsam eius consequuntur cupiditate aperiam porro, esse
+          laborum impedit nesciunt ut voluptatum assumenda aspernatur libero
+          iusto error molestias dolorum, necessitatibus labore?
+        </p>
+      </div>
+    </section>
+    <ImageSection imageIsLeft={true} imageSrc={"ash-from.jpg"}/>
 </Layout>
