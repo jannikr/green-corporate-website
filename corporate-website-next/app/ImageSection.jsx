@@ -12,7 +12,6 @@ const ImageSection = (props) => {
                 <div className={`${styles.container} container`}>
                     {props.imageIsLeft && <div>
                         <Image src={props.imageSrc}
-                               alt="Logo"
                                className={`${styles.imageSection} ${styles.imageSectionLeft}`}
                                width={450}
                                height={300}

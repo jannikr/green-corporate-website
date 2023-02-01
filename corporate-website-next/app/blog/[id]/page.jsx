@@ -1,4 +1,6 @@
 import Articles from '../../../data/articles.json'
+import styles from "@/app/ImageSection.module.css";
+import Image from "next/image";
 
 export function getArticle(articleId) {
     const article = Articles.find(el => el.id === articleId)
@@ -21,8 +23,11 @@ const Article = async ({params}) => {
                 <div className="container">
                     <div className="card">
                         <h3>{article.title}</h3>
-                        {/*                    TODO: Add Image to article
-                    <img src={require("../../assets/blog/" + image)} style={imageStyle} alt=""/>*/}
+                        <Image src={`/${article.image}`}
+                               width={450}
+                               height={300}
+                               priority
+                        />
                         <p>{article.body}</p>
                     </div>
                 </div>
