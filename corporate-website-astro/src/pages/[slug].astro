@@ -22,11 +22,8 @@ const { Content, frontmatter } = Astro.props.post;
   <section class="page-content">
     <div class="container">
       <Card>
-        <a class="btn" href="/blog">Go Back</a>
         <h2>{frontmatter.title}</h2>
-        <div>
-          Written by <strong>{frontmatter.author} </strong> on {new Date(frontmatter.date).toLocaleDateString()}
-        </div>
+        <img width="450" height="300" src={frontmatter.image}/>
         <Content />
       </Card>
     </div>
