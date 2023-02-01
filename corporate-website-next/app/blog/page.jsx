@@ -1,5 +1,6 @@
 import React from "react";
 import Articles from '../../data/articles.json'
+import Link from "next/link";
 
 const Blog = () => {
     return (
@@ -9,8 +10,7 @@ const Blog = () => {
                     <div className="card" key={a.title}>
                         <h3>{a.title}</h3>
                         <p>{a.body}</p>
-                        {/*Todo: Add link to article*/}
-                        {/*<Link to={`/blog/${ a.id }`}>Read more...</Link>*/}
+                        <Link href={`/blog/${ a.id }`}>Read more...</Link>
                     </div>
                 ))}
             </div>
