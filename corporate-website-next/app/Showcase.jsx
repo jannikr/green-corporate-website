@@ -2,9 +2,6 @@ import styles from './Showcase.module.css';
 import React from "react";
 import Image from 'next/image'
 
-const heading = "Welcome To the Green IT Agency!"
-const text= "Discover new ways to reduce the resource consumption of web applications"
-
 const Showcase = (props) => {
 
     const showExtra = props.showExtra
