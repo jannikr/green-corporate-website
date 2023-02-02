@@ -8,7 +8,7 @@ import ImageSection from "@/app/ImageSection";
 export default function Home() {
   return (
       <div>
-        <Showcase/>
+        <Showcase heading = "Welcome To the Green IT Agency!" text= "Discover new ways to reduce the resource consumption of web applications" showExtra={true}/>
         <section className="page-content">
           <div className="container">
             <Features/>

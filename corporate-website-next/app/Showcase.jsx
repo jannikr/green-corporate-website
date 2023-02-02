@@ -5,7 +5,12 @@ import Image from 'next/image'
 const heading = "Welcome To the Green IT Agency!"
 const text= "Discover new ways to reduce the resource consumption of web applications"
 
-const Showcase = () => {
+const Showcase = (props) => {
+
+    const showExtra = props.showExtra
+    const heading = props.heading
+    const text = props.text
+
     return (
         <section className={styles.showcase}>
             <div className={styles.showcaseText}>
@@ -14,6 +19,7 @@ const Showcase = () => {
                     {text}
                 </p>
             </div>
+            { showExtra && <>
             <div className={styles.showcaseImg}>
                 <Image
                     src="/framework-logos.png"
@@ -35,8 +41,15 @@ const Showcase = () => {
             <p className={styles.showcaseDemo}>
                 <small>This is a demo website used for energy efficiency measurements.</small>
             </p>
+            </>}
         </section>
     );
+}
+
+Showcase.defaultProps = {
+    showExtra: false,
+    heading: "Welcome To the Green IT Agency!",
+    text: "Discover new ways to reduce the resource consumption of web applications"
 }
 
 export default Showcase;

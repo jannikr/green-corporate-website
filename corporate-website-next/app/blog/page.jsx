@@ -1,9 +1,12 @@
 import React from "react";
 import Articles from '../../data/articles.json'
 import Link from "next/link";
+import Showcase from "@/app/Showcase";
 
 const Blog = () => {
     return (
+        <>
+        <Showcase heading="Next Blog" text="A simple blog built with Next" showExtra={ false }/>
         <section className="page-content">
             <div className="container">
                 {Articles.map(a => (
@@ -15,6 +18,7 @@ const Blog = () => {
                 ))}
             </div>
         </section>
+        </>
     );
 }
 
