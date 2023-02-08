@@ -1,4 +1,5 @@
 # Based on node server version 15
+# TODO: Change to version 16 for equal version with next docker image
 FROM node:15 as build
 # Working directory
 WORKDIR '/app'

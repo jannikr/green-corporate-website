@@ -32,6 +32,13 @@ this purpose:
 
 Creates docker image in the development mode.
 
-### `docker run -it --rm -p 3000:3000 -d nextimage:dev`
+### `docker build -t nextimage:prod -f Dockerfile.prod .`
 
-Runs the development image / app on port 3000.
+Creates docker image in the production mode.
+
+### `docker run -it --rm -p 3000:3000 -d nextimage:prod`
+
+Runs the production image / app on port 3000. You may use `nextimage:dev` instead of `nextimage:prod` in order to run 
+the image /
+app in development mode.
+
