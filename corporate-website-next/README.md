@@ -32,13 +32,12 @@ this purpose:
 
 Creates docker image in the development mode.
 
-### `docker build -t nextimage:prod -f Dockerfile.prod .`
+### `docker build -t nextimage:prod -f Dockerfile.< ssr / ssg >.prod .`
 
-Creates docker image in the production mode.
+Since Nextjs offers both static side rendering (SSG) and server side rendering (SSR), there are two production images. The SSG image is implemented with an nginx web server that can only deliver static files. This variant is suitable for comparison with the other frameworks. However, in order to also take SSR into account, the SSR image is delivered with a node server so that dynamic content can also be rendered.
 
 ### `docker run -it --rm -p 3000:3000 -d nextimage:prod`
 
 Runs the production image / app on port 3000. You may use `nextimage:dev` instead of `nextimage:prod` in order to run 
-the image /
-app in development mode.
+the image / app in development mode. For SSG production image use port 8080:80 instead of 3000:3000.
 

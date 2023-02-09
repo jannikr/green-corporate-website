@@ -12,5 +12,5 @@ COPY . .
 RUN npm run build
 # Expose port
 EXPOSE 3000
-# Run server
+# Run node.js server
 CMD ["npm","run", "start"]
