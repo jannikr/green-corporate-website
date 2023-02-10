@@ -1,0 +1,36 @@
+.showcase {
+    height: auto;
+    background-color: var(--color-secondary);
+    background-image: linear-gradient(to bottom, var(--color-primary), rgb(15 23 42 / 0));
+    padding: 30px;
+}
+.showcaseBlog {
+    min-height: 300px;
+}
+.showcaseText {
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+    margin: 50px auto;
+}
+.showcase h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.showcase p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.showcaseImg {
+    text-align: center;
+}
+.showcaseImg img {
+    border-radius: 10px;
+    margin: auto;
+}
+.showcaseDemo {
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+}

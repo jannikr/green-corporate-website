@@ -1,0 +1,4 @@
+.dark {
+    background: var(--color-primary);
+    color: #fff;
+}

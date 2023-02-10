@@ -1,0 +1,35 @@
+import styles from './Navbar.module.css';
+import React from "react";
+import Image from 'next/image'
+import Link from "next/link";
+
+const Navbar = () => {
+    return (
+        <header className={styles.header}>
+            <div className={`container ${styles.container}`}>
+                <div className="logo">
+                    <Link className={styles.listItem} href="/">
+                        <Image
+                            src="logo.svg"
+                            alt="Logo"
+                            className={styles.header}
+                            width={100}
+                            height={24}
+                            priority
+                        />
+                    </Link>
+                </div>
+                <nav>
+                    <ul>
+                        {/*Todo: Check disable prefetching with prefetch={false} as Link parameter*/}
+                        <li><Link className={styles.listItem} href="/">Home</Link></li>
+                        <li><Link className={styles.listItem} href="/about">About</Link></li>
+                        <li><Link className={styles.listItem} href="/team">Team</Link></li>
+                        <li><Link className={styles.listItem} href="/blog">Blog</Link></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    );
+}
+export default Navbar;
