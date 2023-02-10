@@ -34,6 +34,8 @@ Creates docker image in the development mode.
 
 ### `docker build -t nextimage:prod -f Dockerfile.< ssr / ssg >.prod .`
 
+> next export is not yet available for next.js version 13 with app directory: SSG is not applicable!
+
 Since Nextjs offers both static side rendering (SSG) and server side rendering (SSR), there are two production images. The SSG image is implemented with an nginx web server that can only deliver static files. This variant is suitable for comparison with the other frameworks. However, in order to also take SSR into account, the SSR image is delivered with a node server so that dynamic content can also be rendered.
 
 ### `docker run -it --rm -p 3000:3000 -d nextimage:prod`
