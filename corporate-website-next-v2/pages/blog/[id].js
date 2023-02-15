@@ -12,7 +12,6 @@ export function getStaticProps(context){
     }
 }
 
-// TODO: Enable SSG for each blog article
 export async function getStaticPaths() {
     const articlePaths = Articles.map(article => ({
         params : { id : article.id}
