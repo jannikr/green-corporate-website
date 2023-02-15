@@ -30,15 +30,34 @@ In order to be able to perform the measurements regarding the energy efficiency 
 necessary to run the individual components as independent [Docker](https://docs.docker.com/get-docker/) images. The following commands are available for 
 this purpose:
 
-### `docker build -t reactimage:dev -f Dockerfile.dev .`
+`docker build -t reactimage:dev -f Dockerfile.dev .`
 
 Creates docker image in the development mode.
 
-### `docker build -t reactimage:prod -f Dockerfile.prod .`
+`docker build -t reactimage:prod -f Dockerfile.prod .`
 
 Creates docker image in the production mode.
 
-### `docker run -it --rm -p 3000:80 -d reactimage:prod`
+`docker run -it --rm -p 3000:80 -d reactimage:prod`
 
 Runs the production image / app on port 3000. You may use `reactimage:dev` instead of `reactimage:prod` in order to run the image / 
 app in development mode.
+
+## Docker Compose
+
+Docker Compose is a tool by Docker that allows to handle multiple container setups. This is necessary for this 
+project in order to measure the energy consumption for all components that are part of the web application. Since we 
+build in the Docker section our own web server that provides the client with data we also need to take the client 
+side into account.
+
+`docker-compose up -d`
+
+Run all images (client/server)
+
+`docker-compose ps`
+
+Show all images (client/server)
+
+`docker-compose kill`
+
+Turn off all images (client/server)
