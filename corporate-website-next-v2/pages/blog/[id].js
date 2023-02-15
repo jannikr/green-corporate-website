@@ -1,26 +1,29 @@
 import React from "react";
 import Articles from '../../data/articles.json'
 import Image from "next/image";
-import { useRouter } from 'next/router'
 
-export function getArticle() {
-
-    const router = useRouter()
-    const { id } = router.query
-    const article = Articles.find(el => el.id === id)
-    return article
+export function getStaticProps(context){
+    const { params } = context
+    const data = Articles.find(el => el.id === params.id)
+    return {
+        props: {
+            article: data
+        }
+    }
 }
 
 // TODO: Enable SSG for each blog article
-export async function generateStaticParams() {
-    return Articles.map(article => ({
-        id: article.id
+export async function getStaticPaths() {
+    const articlePaths = Articles.map(article => ({
+        params : { id : article.id}
     }))
+    return {
+        paths: articlePaths,
+        fallback: false,
+    }
 }
 
-const Article = () => {
-
-    const article = getArticle()
+const Article = ({ article }) => {
 
     if (article) {
         return (

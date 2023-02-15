@@ -1,5 +1,4 @@
 import Articles from '../../../data/articles.json'
-import styles from "@/app/ImageSection.module.css";
 import Image from "next/image";
 
 export function getArticle(articleId) {
