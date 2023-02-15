@@ -1,0 +1,27 @@
+---
+name: React Puppeteer Scenario
+author: @jannikr
+version: 1
+
+services:
+  server:
+    image: corporate-website-react-server
+    ports:
+      - 8080:80
+    networks:
+      - react-puppeteer-network
+  client:
+    image: greencoding/puppeteer-chrome
+    setup-commands:
+      - cp . .
+    networks:
+      - react-puppeteer-network
+
+flow:
+  - name: Check Website
+    container: client
+    commands:
+      - type: console
+        command: node /var/www/puppeteer-flow.js
+        note: Starting Puppeteer Flow
+        parse-stdout-as-note: true
