@@ -5,7 +5,7 @@ version: 1
 
 services:
   server:
-    image: corporate-website-react-server
+    image: corporate-website-react_server
     ports:
       - 8080:80
     networks:
