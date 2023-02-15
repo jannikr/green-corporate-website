@@ -1,6 +1,6 @@
 ---
 name: React Puppeteer Scenario
-author: @jannikr
+author: jannikr
 version: 1
 
 services:
