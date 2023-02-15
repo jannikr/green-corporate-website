@@ -13,7 +13,7 @@ services:
   client:
     image: greencoding/puppeteer-chrome
     setup-commands:
-      - cp . .
+      - cp /tmp/repo/puppeteer-flow.js /var/www/puppeteer-flow.js
     networks:
       - react-puppeteer-network
 
