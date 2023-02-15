@@ -22,17 +22,22 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Docker
 
-To learn more about Next.js, take a look at the following resources:
+In order to be able to perform the measurements regarding the energy efficiency of this web application, it is
+necessary to run the individual components as independent [Docker](https://docs.docker.com/get-docker/) images. The following commands are available for
+this purpose:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `docker build -t nextimage:dev -f Dockerfile.dev .`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Creates docker image in the development mode.
 
-## Deploy on Vercel
+### `docker build -t nextimage:prod -f Dockerfile.< ssr / ssg >.prod .`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Since Nextjs offers both static side rendering (SSG) and server side rendering (SSR), there are two production 
+images. The SSG image is implemented with a nginx web server that can only deliver static files. This variant is suitable for comparison with the other frameworks. However, in order to also take SSR into account, the SSR image is delivered with a node server so that dynamic content can also be rendered.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### `docker run -it --rm -p 3000:3000 -d nextimage:prod`
+
+Runs the production image / app on port 3000. You may use `nextimage:dev` instead of `nextimage:prod` in order to run
+the image / app in development mode. For SSG production image use port 8080:80 instead of 3000:3000.
