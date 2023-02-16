@@ -23,7 +23,7 @@ const microtime = require("microtime");
     });
 
     console.log(microtime.now()," Home Page");
-    await page.goto("http://corporate-website-react-server:8080", {
+    await page.goto("http://server", {
         waitUntil: "networkidle2",
     });
 
