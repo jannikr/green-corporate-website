@@ -7,8 +7,12 @@ In this project, which is part of my master's thesis, various front-end web tech
 In order to be able to measure the energy consumption as identically as possible for each adaptation of the web application, usage scenarios are created. The usage scenarios automatically simulate a visit to the website. During the execution, different metrics are tracked with a measurement procedure to be able to determine the energy consumption.
 
 ## Measurement
-The Green Metrics Tool is used for the measurement. It offers precise possibilities to determine the consumption of 
-a web application with different components that are normally used for this type of application. This includes a web server, a web client and, if applicable, a database. These components are deployed independently of each other in Docker containers and can then be measured using the usage scenarios CPU load, memory load or network traffic.
+<!-- Source: https://dl.gi.de/handle/20.500.12116/39398 -->
+It is necessary to determine the consumption of each component of the application such as web server, a web client and,
+if applicable, a database. For this purpose, the [Green Metrics Tool](https://docs.green-coding.berlin/) provides 
+tools for measuring the consumption of a web application. The components are deployed independently of each other in 
+Docker containers and can then be measured using the usage scenarios with the metrics CPU load, memory load or network 
+traffic.
 
 ## Analysis
 
