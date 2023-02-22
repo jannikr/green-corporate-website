@@ -1,23 +1,24 @@
+# Based on node server version 16
 FROM node:16-alpine AS builder
-
+# Working directory
 WORKDIR /app
-
+# Copy project dependencies into WORKDIR
 COPY package.json ./
-
-COPY package-lock.json ./
-
+# Optional:
+# COPY package-lock.json ./
+# Install packages
 RUN npm install
-
+# Copy the rest of the code
 COPY . .
-
+# Build project for production
 RUN npm run build
-
+# Provide SSG files
 RUN npm run export
-
+# Based on nginx server version 1.22.1
 FROM nginx:1.19-alpine AS server
-
+# nginx configuration file
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
-
+# Copy build files
 COPY --from=builder /app /
-
+# Expose port
 EXPOSE 80

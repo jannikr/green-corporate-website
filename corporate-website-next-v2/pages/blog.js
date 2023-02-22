@@ -13,7 +13,7 @@ const Blog = () => {
                         <div className="card" key={a.title}>
                             <h3>{a.title}</h3>
                             <p>{a.body}</p>
-                            <Link href={`/blog/${ a.id }`}>Read more...</Link>
+                            <Link id={`blog-id-${a.id}`} href={`/blog/${ a.id }`}>Read more...</Link>
                         </div>
                     ))}
                 </div>
