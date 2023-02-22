@@ -35,22 +35,20 @@ const microtime = require("microtime");
     await page.click('[id="about-navbar-link"]');
     await page.waitForSelector("#about-title");
 
-    /*
     console.log(microtime.now()," Team Page");
-    await page.click("a[href='http://server/team']");
-    await page.waitForSelector(".wpcf7 form input");
+    await page.click('[id="about-footer-link"]');
+    await page.waitForSelector("#team-title");
 
     console.log(microtime.now()," Blog Page");
-    await page.click("a[href='http://server/blog']");
-    await page.waitForSelector(".wpcf7 form input");
+    await page.click('[id="about-navbar-link"]');
+    await page.waitForXPath('//h1[contains(text(), "React Blog")]')
 
-    Todo: Scrollen...
+    // Todo: Scrollen...
 
-    console.log(microtime.now()," Article 3 Page");
-    await page.click("a[href='http://server/team']");
-    await page.waitForSelector(".wpcf7 form input");
+    console.log(microtime.now()," Article 3");
+    await page.click('[id="blog-id-3"]');
+    await page.waitForXPath('//h3[contains(text(), "At vero eos")]')
 
     console.log(microtime.now()," Closing browser");
     await browser.close();
-     */
 })();

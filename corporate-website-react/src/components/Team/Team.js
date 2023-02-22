@@ -17,7 +17,7 @@ const Team = () => {
     return (
         <section className="page-content">
             <div className="container">
-                <h2>Our team</h2>
+                <h2 id="about-title">Our team</h2>
                 { users && users.map(a => (
                         <div className="card" key={a.id}>
                             <h3>{a.name}</h3>
