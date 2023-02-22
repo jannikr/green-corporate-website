@@ -1,0 +1,31 @@
+---
+name: Astro Puppeteer Scenario
+author: jannikr
+version: 1
+
+services:
+  server:
+    image: corporate-website-astro_server
+    ports:
+      - 8080:8080
+    networks:
+      - astro-puppeteer-network
+  client:
+    # Use testing because stable version is not launching browser
+    image: greencoding/puppeteer-chrome:testing
+    setup-commands:
+      - cp /tmp/repo/puppeteer-flow.js /var/www/puppeteer-flow.js
+    networks:
+      - astro-puppeteer-network
+
+flow:
+  - name: Check Website
+    container: client
+    commands:
+      - type: console
+        command: node /var/www/puppeteer-flow.js
+        note: Starting Puppeteer Flow
+        parse-stdout-as-note: true
+
+networks:
+  astro-puppeteer-network:

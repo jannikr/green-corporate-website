@@ -14,9 +14,9 @@ const posts = await Astro.glob('../posts/*.md');
         <Card>
           <h3>{post.frontmatter.title}</h3>
           <p>{post.frontmatter.excerpt}</p>  
-          <a class="btn" href={`/${post.frontmatter.slug}`}>Read More</a>
+          <a class="btn" id={`blog-id-${post.frontmatter.slug}`} href={`/${post.frontmatter.slug}`}>Read More</a>
         </Card>
       ))}
     </div>
   </section>
-</Layout>
+</Layout>   
