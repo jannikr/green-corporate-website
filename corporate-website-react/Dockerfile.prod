@@ -1,6 +1,5 @@
-# Based on node server version 15
-# TODO: Change to version 16 for equal version with next docker image
-FROM node:15 as build
+# Based on node server version 16
+FROM node:16 as build
 # Working directory
 WORKDIR '/app'
 # Copy project dependencies into WORKDIR
