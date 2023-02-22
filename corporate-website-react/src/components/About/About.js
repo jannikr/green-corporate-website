@@ -5,7 +5,7 @@ const About = () => {
     return (
         <section className="page-content">
             <div className="container">
-                <h2>About Astro</h2>
+                <h2 id="about-title">About Astro</h2>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, vel
                     quas repudiandae optio voluptatibus dolore maxime sed nisi ad, quod
