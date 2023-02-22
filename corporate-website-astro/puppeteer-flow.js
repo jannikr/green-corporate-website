@@ -25,7 +25,7 @@ const microtime = require("microtime");
     // Usage scenario:
 
     console.log(microtime.now()," Home Page");
-    await page.goto("http://server", {
+    await page.goto("http://server:8080", {
         waitUntil: "networkidle2",
     });
 

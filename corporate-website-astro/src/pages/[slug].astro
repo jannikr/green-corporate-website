@@ -22,8 +22,8 @@ const { Content, frontmatter } = Astro.props.post;
   <section class="page-content">
     <div class="container">
       <Card>
-        <h2>{frontmatter.title}</h2>
-        <img width="450" height="300" src={frontmatter.image}/>
+        <h3>{frontmatter.title}</h3>
+        <img width="450" height="300" src={`/${frontmatter.image}`}/>
         <Content />
       </Card>
     </div>
