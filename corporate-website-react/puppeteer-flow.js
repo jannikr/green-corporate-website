@@ -36,11 +36,11 @@ const microtime = require("microtime");
     await page.waitForSelector("#about-title");
 
     console.log(microtime.now()," Team Page");
-    await page.click('[id="about-footer-link"]');
+    await page.click('[id="team-footer-link"]');
     await page.waitForSelector("#team-title");
 
     console.log(microtime.now()," Blog Page");
-    await page.click('[id="about-navbar-link"]');
+    await page.click('[id="blog-navbar-link"]');
     await page.waitForXPath('//h1[contains(text(), "React Blog")]')
 
     // Todo: Scrollen...
