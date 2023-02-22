@@ -5,7 +5,7 @@ version: 1
 
 services:
   server:
-    image: corporate-website-next_server
+    image: corporate-website-next-v2_server
     ports:
       - 8080:80
     networks:
