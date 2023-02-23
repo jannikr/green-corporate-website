@@ -26,7 +26,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <ImageSection imageIsLeft={false} imageSrc={"/sky-loop.jpg"}/>*
+        <ImageSection imageIsLeft={false} imageSrc={"/marek-levak.jpg"}/>*
         <section className="page-content">
           <div className="container">
             <h3>Lorem ipsum</h3>
@@ -49,7 +49,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <ImageSection imageIsLeft={true} imageSrc={"/ash-from.jpg"}/>
+        <ImageSection imageIsLeft={true} imageSrc={"/antoine-rault.jpg"}/>
 
       </div>
   )
