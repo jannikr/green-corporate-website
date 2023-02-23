@@ -1,6 +1,6 @@
 ---
 title: Duis aute irure
-slug: duis-aute-irure
+id: 2
 excerpt: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptate, quae, quod, voluptates quibusdam voluptatibus quidem voluptatum quos quia quas nesciunt. Quisquam, quae. Quisquam, quae. Quisquam, quae. Quisquam, quae.
 image: ash-from.jpg
 date: 2022-06-20

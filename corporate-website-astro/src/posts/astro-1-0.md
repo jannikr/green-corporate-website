@@ -1,6 +1,6 @@
 ---
 title: Lorem ipsum dolor
-slug: lorem-ipsum-dolor
+id: 1
 excerpt: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
 image: andrew-coelho.jpg
 date: 2022-05-13

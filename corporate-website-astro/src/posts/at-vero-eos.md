@@ -1,6 +1,6 @@
 ---
 title: At vero eos
-slug: at-vero-eos
+id: 4
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: sky-loop.jpg
 date: 2022-08-01

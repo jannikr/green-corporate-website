@@ -1,6 +1,6 @@
 ---
 title: At vero eos
-slug: at-vero-eos
+id: 3
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: dawid-zawila.jpg
 date: 2022-08-01

@@ -1,6 +1,6 @@
 ---
 title: Duis aute irure
-slug: duis-aute-irure
+id: 5
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: ross-domke.jpg
 date: 2022-08-01

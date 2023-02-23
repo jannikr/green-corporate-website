@@ -1,6 +1,6 @@
 ---
 title: Lorem ipsum dolor
-slug: lorem-ipsum-dolor
+id: 6
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 image: hoach-le-dinh.jpg
 date: 2022-08-01
