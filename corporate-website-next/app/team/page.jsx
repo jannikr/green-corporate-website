@@ -15,7 +15,7 @@ const Team = async () => {
 
         <section className="page-content">
             <div className="container">
-                <h2>Our team</h2>
+                <h2 id="team-title">Our team</h2>
                 {team.map(a => (
                     <div className="card" key={a.id}>
                         <h3>{a.name}</h3>

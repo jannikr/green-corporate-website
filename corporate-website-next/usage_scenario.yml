@@ -7,7 +7,7 @@ services:
   server:
     image: corporate-website-next_server
     ports:
-      - 8080:3000
+      - 3000:3000
     networks:
       - next-puppeteer-network
   client:
