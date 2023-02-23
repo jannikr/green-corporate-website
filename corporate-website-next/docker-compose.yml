@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile.ssr.prod
+    ports:
+      - "8080:3000"
+# Since this file is only for building the server the client image can be skipped:
+#  client:
+#    image: greencoding/puppeteer-chrome
