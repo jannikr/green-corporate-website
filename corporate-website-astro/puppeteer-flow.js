@@ -46,7 +46,7 @@ const microtime = require("microtime");
     // Todo: Scrollen...
 
     console.log(microtime.now()," Article 3");
-    await page.click('[id="blog-id-at-vero-eos"]');
+    await page.click('[id="blog-id-3"]');
     await page.waitForXPath('//h3[contains(text(), "At vero eos")]')
 
     console.log(microtime.now()," Closing browser");
