@@ -15,9 +15,11 @@ const Home = () => {
                         Get a new Astro project up and running locally with our helpful
                         create-astro CLI wizard!
                     </p>
-                    <Tabs tabTitle={["NPM", "PNPM", "YARN"]}
-                          tabBody={["$ npm create astro@latest", "$ pnpm create astro@latest", "$ yarn create astro"]}
-                    />
+                    {/*
+                        <Tabs tabTitle={["NPM", "PNPM", "YARN"]}
+                              tabBody={["$ npm create astro@latest", "$ pnpm create astro@latest", "$ yarn create astro"]}
+                        />
+                    */}
                     <h3>Start Building</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsum
