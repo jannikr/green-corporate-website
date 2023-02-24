@@ -1,6 +1,6 @@
 import Showcase from "./Showcase";
 import Features from "./Features";
-import Tabs from "./Tabs";
+// import Tabs from "./Tabs";
 import ImageSection from "./ImageSection";
 
 const Home = () => {
