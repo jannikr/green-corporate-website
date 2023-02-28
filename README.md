@@ -11,7 +11,8 @@ In order to be able to measure the energy consumption as identically as possible
 It is necessary to determine the consumption of each component of the application such as web server, a web client and,
 if applicable, a database. For this purpose, the [Green Metrics Tool](https://docs.green-coding.berlin/) provides 
 tools for measuring the consumption of a web application. The components are deployed independently of each other in 
-Docker containers and can then be measured using the usage scenarios with the metrics CPU load, memory load or network 
+Docker containers and can then be measured using the usage scenarios with the metrics power consumption, memory load or 
+network 
 traffic.
 
 ## Analysis
