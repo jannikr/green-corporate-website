@@ -22,10 +22,10 @@ const Navbar = () => {
                 <nav>
                     <ul>
                         {/*Todo: Check disable prefetching with prefetch={false} as Link parameter*/}
-                        <li><Link id="home-navbar-link" className={styles.listItem} href="/">Home</Link></li>
-                        <li><Link id="about-navbar-link" className={styles.listItem} href="/about">About</Link></li>
-                        <li><Link id="team-navbar-link" className={styles.listItem} href="/team">Team</Link></li>
-                        <li><Link id="blog-navbar-link" className={styles.listItem} href="/blog">Blog</Link></li>
+                        <li><Link id="home-navbar-link" className={styles.listItem} prefetch={false} href="/">Home</Link></li>
+                        <li><Link id="about-navbar-link" className={styles.listItem} prefetch={false} href="/about">About</Link></li>
+                        <li><Link id="team-navbar-link" className={styles.listItem} prefetch={false} href="/team">Team</Link></li>
+                        <li><Link id="blog-navbar-link" className={styles.listItem} prefetch={false} href="/blog">Blog</Link></li>
                     </ul>
                 </nav>
             </div>

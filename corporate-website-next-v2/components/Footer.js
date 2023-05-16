@@ -16,10 +16,10 @@ const Footer = () => {
                 <div>
                     <h3>Links</h3>
                     <ul>
-                        <li><Link id="home-footer-link" className={styles.listItem} href="/">Home</Link></li>
-                        <li><Link id="about-footer-link" className={styles.listItem} href="/about">About</Link></li>
-                        <li><Link id="team-footer-link" className={styles.listItem} href="/team">Team</Link></li>
-                        <li><Link id="blog-footer-link" className={styles.listItem} href="/blog">Blog</Link></li>
+                        <li><Link id="home-footer-link" className={styles.listItem} prefetch={false} href="/">Home</Link></li>
+                        <li><Link id="about-footer-link" className={styles.listItem} prefetch={false} href="/about">About</Link></li>
+                        <li><Link id="team-footer-link" className={styles.listItem} prefetch={false} href="/team">Team</Link></li>
+                        <li><Link id="blog-footer-link" className={styles.listItem} prefetch={false} href="/blog">Blog</Link></li>
                     </ul>
                 </div>
             </div>
